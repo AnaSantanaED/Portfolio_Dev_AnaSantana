@@ -1,0 +1,257 @@
+/* Reset */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+:root {
+    --primary-color: #4a90e2;
+    --secondary-color: #f4f5f7;
+    --background-color:#B6FFA1;
+    --text-color: #333333;
+    --accent-color: #ffa500;
+    --font-family: 'Raleway', sans-serif;
+}
+
+
+body {
+    font-family: var(--font-family);
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    color: var(--primary-color);
+}
+
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+button {
+    cursor: pointer;
+    background-color: var(--primary-color);
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: var(--accent-color);
+}
+
+/* Cabeçalho */
+.cabecalho {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    background-color: var(--primary-color);
+    color: #ffffff;
+}
+
+.cabecalho img {
+    width: 90px;
+    border-radius: 50%;
+}
+
+.navegacao .lista_cabecalho {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.navegacao a {
+    color: #ffffff;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.navegacao a:hover {
+    color: var(--accent-color);
+}
+
+/* Seção de apresentação */
+.apresentacao {
+    text-align: center;
+    padding: 2rem;
+}
+
+.foto_apresentacao {
+    width: 200px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+.apresentacao_titulo {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.contatos_web a {
+    margin: 0 10px;
+    display: inline-block;
+}
+
+.contatos_web img {
+    width: 40px;
+    transition: transform 0.9s ease;
+}
+
+.contatos_web a:hover img {
+    transform: scale(1.1);
+}
+
+/* Seção sobre mim */
+.sobre_mim {
+    background-color: var(--secondary-color);
+    padding: 2rem;
+}
+
+.titulo_sobre_mim {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.texto_sobre_mim {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Seção skills */
+.skills {
+    padding: 2rem;
+    text-align: center;
+}
+
+.lista_skills {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.elementos_skills {
+    text-align: center;
+}
+
+.logo_skills {
+    width: 50px;
+    margin-bottom: 0.5rem;
+}
+
+/* Seção formação acadêmica */
+.formacao_academica {
+    background-color: var(--secondary-color);
+    padding: 2rem;
+}
+
+.formacao_lista {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.formacao_elemento {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+    max-width: 600px;
+}
+
+.formacao_logo {
+    width: 50px;
+}
+
+/* Seção projetos */
+.projetos_dev {
+    padding: 2rem;
+}
+
+.container_projetos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.imagem_projeto {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 8px;
+    margin-top: 0.5rem;
+}
+
+/* Seção contato */
+.formulario_contato {
+    background-color: var(--secondary-color);
+    padding: 2rem;
+}
+
+.form-container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+form label {
+    display: block;
+    margin-top: 1rem;
+    font-weight: 500;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: var(--font-family);
+}
+
+form button {
+    margin-top: 1rem;
+    width: 100%;
+}
+
+/* Rodapé */
+.rodape {
+    text-align: center;
+    padding: 1rem;
+    background-color: var(--primary-color);
+    color: #ffffff;
+    font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+    .cabecalho {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .navegacao .lista_cabecalho {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    
+    .lista_skills {
+        flex-direction: column;
+    }
+    
+    .formacao_lista {
+        align-items: center;
+    }
+}
