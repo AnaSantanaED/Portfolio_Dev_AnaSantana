@@ -20,7 +20,7 @@ Para a construção deste portfólio, utilizei as seguintes tecnologias:
 
 ## 🚀 Como Visualizar
 
-Você pode visualizar o portfólio acessando o link do GitHub (https://github.com/AnaSantanaED/Portfolio_Dev_AnaSantana) ou clonando o repositório e abrindo o arquivo `index.html` em seu navegador.
+Você pode visualizar o portfólio acessando o link do GitHub https://github.com/AnaSantanaED/Portfolio_Dev_AnaSantana, conferir o projeto deployado/hospedado na Versel através do link https://portfolio-dev-ana-santana.vercel.app/ ou clonando o repositório e abrindo o arquivo `index.html` em seu navegador.
 
 ## 📈 Próximos Passos
 
